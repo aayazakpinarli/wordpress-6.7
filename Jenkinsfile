@@ -2,9 +2,9 @@ pipeline {
     agent any
     
     stages {
-        stage('Build and Publish') {
+        stage('Checkout') {
             steps {
-                sh 'composer install'
+                checkout scm
             }
         }
     }
