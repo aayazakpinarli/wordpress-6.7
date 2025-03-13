@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build and Publish') {
             steps {
-                sh 'mvn clean package'
+                sh 'composer install'
             }
         }
     }
