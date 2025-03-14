@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                        ssh -o StrictHostKeyChecking=no -i ${REMOTE_SSH_CREDENTIALS} aayaz@${REMOTE_HOST} '
+                        ssh aayaz@${REMOTE_HOST} '
                             git pull origin main
                         '
                     """
