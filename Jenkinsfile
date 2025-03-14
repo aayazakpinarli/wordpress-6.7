@@ -13,7 +13,6 @@ pipeline {
                 script {
                     sh """
                         ssh -o StrictHostKeyChecking=no -i ${REMOTE_SSH_CREDENTIALS} user@${REMOTE_HOST} '
-                            cd ${REMOTE_DIR} || mkdir -p ${REMOTE_DIR} && \
                             git pull origin main
                         '
                     """
