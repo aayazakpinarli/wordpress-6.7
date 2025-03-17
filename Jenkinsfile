@@ -1,3 +1,3 @@
 sshagent(['vm-connection']) {
-    sh 'ssh user@app-vm "echo SSH Connected"'
+    sh 'ssh aayaz@35.242.207.186 "echo SSH Connected"'
 }
