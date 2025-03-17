@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository on Remote VM') {
             steps {
                 script {
-                    sshagent(['jenkins-vm']) { 
+                    sshagent(['vm-connection']) { 
                         sh """
                         ssh -o StrictHostKeyChecking=no \$TARGET_VM '
                         if [ ! -d "\$DEST_DIR/.git" ]; then
