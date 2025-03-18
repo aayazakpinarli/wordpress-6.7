@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sshagent(['app-connection']) {
                         sh '''
-                        ssh -o StrictHostKeyChecking=no aayaz@35.242.207.186 << 'EOF'
+                        ssh -o StrictHostKeyChecking=no aayaz@35.242.207.186 <<'EOF'
                         echo "Connected to VM!"
                         sudo apt update -y
                         sudo apt install git -y
