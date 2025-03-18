@@ -11,7 +11,9 @@ pipeline {
                         sudo apt install git -y;
                         cd /var/www/;
                         sudo git clone https://github.com/aayazakpinarli/wordpress-6.7;
-                        echo 'Repository cloned successfully!';
+                        sudo git clone https://github.com/aayazakpinarli/wordpress-6.6;
+                        sudo git clone https://github.com/aayazakpinarli/wordpress-6.5;
+                        echo 'Repositories are cloned successfully!';
                         "
                     '''
                 }
