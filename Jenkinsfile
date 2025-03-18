@@ -7,8 +7,6 @@ pipeline {
                         sh '''
                         ssh -o StrictHostKeyChecking=no aayaz@35.242.207.186 "
                         echo 'Connected to VM!';
-                        sudo apt update -y;
-                        sudo apt install git -y;
                         cd /var/www/;
                         sudo git clone https://github.com/aayazakpinarli/wordpress-6.7;
                         sudo git clone https://github.com/aayazakpinarli/wordpress-6.6;
